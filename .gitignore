@@ -2,7 +2,7 @@
 __pycache__/
 .idea/
 pictures/
-picture_2/
+pictures_2/
 
 *.py[cod]
 *$py.class
