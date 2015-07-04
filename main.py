@@ -44,7 +44,7 @@ class MyMainGui(QMainWindow, Ui_MainWindow):
         """Presents a dialog box to select pictures and then displays the first picture."""
 
         self.file_names = QFileDialog.getOpenFileNames(self, None, '',
-                                                       "Image files (*.png *.bmp *.jpeg *.tiff *.jpg *.gif *.svg);;"
+                                                       "Image files (*.png *.bmp *.jpeg *.tiff *.jpg *.svg);;"
                                                        "All files(*)")
         if self.file_names == []:
             # if user hasn't chosen a picture, then don't do anything
@@ -64,7 +64,7 @@ class MyMainGui(QMainWindow, Ui_MainWindow):
             self.listWidget.addItem(file_name)
 
     def display_picture(self, index=0):
-        """Displays a picture inside the QGraphics scence."""
+        """Displays a picture inside the QGraphics scene."""
 
         self.scene.clear()                                       # clear graphics scene
 

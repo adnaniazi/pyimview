@@ -12,7 +12,7 @@ base = 'Win32GUI' if sys.platform=='win32' else None
 executables = [
     Executable('main.py',
                base=base,
-               targetName='PyTimer.exe',
+               targetName='PyImView.exe',
                icon='icon.ico'
 
                )
@@ -21,9 +21,9 @@ executables = [
 shortcut_table = [
     ("DesktopShortcut",        # Shortcut
      "DesktopFolder",          # Directory_
-     "PyTimer",                                 # Name
+     "PyImView",                                 # Name
      "TARGETDIR",              # Component_
-     "[TARGETDIR]PyTimer.exe",                  # Target
+     "[TARGETDIR]PyImView.exe",                  # Target
      None,                     # Arguments
      None,                     # Description
      None,                     # Hotkey
@@ -35,9 +35,9 @@ shortcut_table = [
 
     ("StartupShortcut",        # Shortcut
      "StartupFolder",          # Directory_
-     "PyTimer",                                 # Name
+     "PyImView",                                 # Name
      "TARGETDIR",              # Component_
-     "[TARGETDIR]PyTimer.exe",                  # Target
+     "[TARGETDIR]PyImView.exe",                  # Target
      None,                     # Arguments
      None,                     # Description
      None,                     # Hotkey
@@ -55,9 +55,9 @@ bdist_msi_options = {'data': msi_data}
 
 
 setup(
-    name = "PyTimer",
+    name = "PyImView",
     version = '0.1',
-    description = "A Python-based timer",
+    description = "A Python-based image viewer",
     options = {'bdist_msi':bdist_msi_options},
     executables = executables
 )
