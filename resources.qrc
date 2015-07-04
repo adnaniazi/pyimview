@@ -1,0 +1,13 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>icons/next.png</file>
+	<file>icons/previous.png</file>
+	<file>icons/fullscreen.png</file>
+    <file>icons/shrink.png</file>
+    <file>icons/rotate-CW.png</file>
+    <file>icons/rotate-CCW.png</file>
+	<file>icons/zoom-in.png</file>
+    <file>icons/zoom-out.png</file>
+    <file>icons/app-icon.png</file>
+</qresource>
+</RCC>
